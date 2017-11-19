@@ -1,0 +1,22 @@
+html, body {
+    height: 100%
+}
+
+#ocean {
+    background-image: url('../images/ocean.jpg');
+    height: 100%;
+}
+
+
+@font-face {
+    font-family: "headerFont"
+    src: url('bebas.ttf') format("truetype");
+}
+
+.container {
+    display: flex;
+}
+.container > div {
+    flex: 1; /*grow*/
+}
+
