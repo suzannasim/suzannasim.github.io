@@ -5,37 +5,31 @@
     <title>Suzanna Sim</title>
     <link rel="icon" type="image/png" href="images/favicon.ico">
     <link rel="stylesheet" type="text/css" href="css/main.css">
-    <script type="text/javascript" src=typed.js></script>
+    <script src="javascript/typed.js"></script>
+    <script src="javascript/js.js"></script>
 </head>
 
 <body>
-
-<!--<img id="ocean" src="images/ocean.jpg" alt="HTML5"> -->
     
-<div id="ocean">
+<div class="navbar" id="navbar">
+    <a href="index.html">Home</a>
+    <a href="about.html">About</a>
+    <a href="websiteresume.pdf" target="_blank">Resume</a>
+    <a href="personal.html">Personal</a>
+</div>
+    
+<! ocean=all links, aboutheader=name and typewriter> 
+<div id="mainbackground">
 <div class="container">
-    <div style="text-align: center; font-family: bebas"><a style="color:floralwhite" href="about.html"> About </a></div>
-    <div style="text-align: center; font-family: bebas"><a style="color:floralwhite" href="resume.html"> Resume </a></div>
-    <div style="text-align: center; font-family: bebas"><a style="color:floralwhite" href="personal.html"> Personal </a></div>
-</div>
-    <h1 style="color:floralwhite; text-align: center; font-family: bebas"> Suzanna Sim </h1>
-    
-    
-    <h2 style="text-align: center; font-family: bebas"> I am a </h2> 
-    
-<div class="container">
-    <h3><span id="typed"></span></h3>
-</div>
 
-    
-<script>
-    var typed = new Typed("#typed", {
-  strings: ["First ^1000 sentence.", "Second sentence."]
-});
-</script>
-    
-    
 </div>
+<div id="aboutheader">
+    <h1 style="color:white; text-align: center; font-family: bebas; font-size: 70pt; margin-top: 250px"> Suzanna Sim </h1>
+</div>
+    
+<div id="typewriter"> 
+    <span style="font-family: bebas; font-size: 30pt; color: white">I am </span><span id="typed" style="color: cornsilk; font-size: 30pt; font-family: bebas;"></span>
+</div></div>
     
 </body>
 
