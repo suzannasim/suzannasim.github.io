@@ -9,15 +9,32 @@ body {
     margin: 0;
 }
 
-#mainbackground {
-    background-image: url('../images/ocean.jpg');
-    width: 100%;
-}
-
 
 @font-face {
     font-family: "headerFont"
     src: url('bebas.ttf') format("truetype");
+}
+
+@font-face{
+    font-family: "Open Sans", sans-serif;
+}
+
+#bodyy{
+    background-image: url(../images/tester.JPG);
+    display: inline-block;
+    overflow: hidden;
+    width: 100%;
+}
+
+#test{
+    display: block;
+    color: white;
+    text-align: center;
+    font-family: bebas;
+    font-size: 100pt;
+    margin-top: 10%;
+    text-shadow: 1px 1px 1px steelblue;
+    margin-bottom: 10%;
 }
 
 #opaqueBackground {
@@ -56,6 +73,8 @@ img.center{
 .aboutbodyparagraph{
     margin-left: 15%;
     margin-right: 15%;
+    margin-top: 15%;
+    margin-bottom: 15%;
 }
 
 #navbar {
@@ -78,6 +97,7 @@ img.center{
 
 #typewriter {
     text-align: center;
+    z-index: -100;
 }
 
 #archeryphoto{
@@ -86,6 +106,14 @@ img.center{
 
 #violinphoto{
     width: 100%;
+}
+
+#personalheader{
+    font-family: bebas;
+    font-size: 50px;
+    color: black;
+    margin-top: 80px;
+    margin-bottom: 30px;
 }
 
 .parallaxcontainer{
@@ -113,64 +141,115 @@ img.center{
 }
 
 .graphicparallax{
-    background: url('../images/vance.jpg') no-repeat;
-    background-position: center center;
-    background-size: cover;
-    background-attachment: fixed;
-    height: 80vh;
-    box-shadow: inset 0 0 1em #111;
+    display: block;
+    background-color: #BCD2ED;
+    padding-left: 12%;
+    margin-top: 2%;
+    padding-top: none;
 }
 
-/* drop down button */
-/*.dropbutton{
-    background-color: steelblue;
-    color: white;
-    padding: 16px;
-    font-size: 16px;
-    border: none;
-    cursor: pointer;
+#archeryvideo{
+    width: 420px;
+    text-align: center;
+    padding-left: 33%;
+    padding-right: auto;
 }
 
-.dropdown{
+#avideotext{
+    margin-left: 33%;
+    margin-right: auto;
+    font-family: times new roman;
+    font-size: 20px
+}
+
+.violinvides{
+    width: 420px;
+    height: auto;
     position: relative;
-    display: inline-block;
+    margin: auto;
+    float: left;
+    overflow: hidden;
 }
 
-/* drop down hidden by default */
-/*.dropdown-content{
-    display: none;
-    position: absolute;
-    background-color: ghostwhite;
-    min-width: 160px;
-    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
-    z-index: 1;
+#orchestravideo{
+    width: 420px;
+    float: left;
+    text-align: center;
+    margin-left: 15%;
+    overflow: hidden;
 }
 
-/* links in drop down menu */
-/*.dropdown-content a{
+#orchvidtext{
+    font-family: times new roman;
+    font-size: 20px
+}
+
+#quintetvideo{
+    width: 420px;
+    position: relative;
+    margin: 0 auto;
+    text-align: center;
+    overflow: hidden;
+}
+
+#quintetvidtext{
+    font-family: times new roman;
+    font-size: 20px  
+}
+
+ul:nth-of-type(1) {
+  list-style-type: disc;
+}
+
+#personalarcheryheader{
+    font-family: bebas;
+    font-size: 30px;
+    margin-left: 3%;
+}
+
+#archerytext{
+    font-family: times new roman;
+    font-size: 20px;
+}
+
+#personalviolinheader{
+    font-family: bebas;
+    font-size: 30px;
+    margin-left: 3%;
+}
+
+#violintext{
+    font-family: times new roman;
+    font-size: 20px;
+}
+
+#gdheader{
+    font-family: bebas;
+    font-size: 30px;
+    margin-left: 3%;
+    display: block;
+}
+
+#gdlink{
+    font-family: times new roman;
+    font-size: 20px;
     color: black;
-    padding: 12px 16px;
-    text-decoration: none;
-    display: block;
-    }
+    margin-top: 10px;
+    padding-bottom: 90px;
+
 }
 
-/* hover color change in drop down  menu */
-/*.dropdown-content a: hover {
-    background-color: lightgray;
-}
-
-/* show dropdown menu on hover */
-/*.dropdown:hover .dropdown-content{
+#gdtext{
+    font-family: times new roman;
+    font-size: 20px;
     display: block;
 }
 
-/* change background color of button when menu is shown */
-/*.dropdown:hover .dropbutton{
-    background-color: lightsteelblue;
-}*/
+#gdtext a:hover{
+    background-color: beige;
+}
 
-/* The navigation bar */
+
 .navbar {
     overflow: hidden;
     background-color: #333;
@@ -189,7 +268,74 @@ img.center{
     text-decoration: none;
 }
 
+.navbar a:hover{
+    background-color: lightsteelblue;
+}
+
 /* Main content */
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+
+.linkbar {
+    font-family: bebas;
+    overflow: hidden;
+    background-color: lightgrey;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar to the bottom of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+}
+
+/* Links inside the navbar */
+.linkbar a {
+    float: left;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.linkbar a:hover{
+    background-color: #FFEC8B;
+}
+
+/* contact me form css */
+/* Style inputs with type="text", select elements and textareas */
+input[type=text], select, textarea {
+    width: 100%; /* Full width */
+    padding: 12px; /* Some padding */  
+    border: 1px solid #ccc; /* Gray border */
+    border-radius: 4px; /* Rounded borders */
+    box-sizing: border-box; /* Make sure that padding and width stays in place */
+    margin-top: 6px; /* Add a top margin */
+    margin-bottom: 16px; /* Bottom margin */
+    resize: vertical /* Allow the user to vertically resize the textarea (not horizontally) */
+}
+
+/* Style the submit button with a specific background color etc */
+input[type=submit] {
+    background-color: lightsteelblue;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* When moving the mouse over the submit button, add a darker color */
+input[type=submit]:hover {
+    background-color: cornflowerblue;
+}
+
+/* Add a background color and some padding around the form */
+.contactmeform {
+    margin-top: 1%;
+    border-radius: 5px;
+    background-color: #f2f2f2;
+    padding: 20px;
+    font-family: times new roman;
+    font-size: 13pt;
 }
