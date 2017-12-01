@@ -20,7 +20,7 @@ body {
 }
 
 #bodyy{
-    background-image: url(../images/bridgecopy.jpg);
+    background-image: url(../images/bridgetest.jpg);
     background-size: cover;
     display: inline-block;
     overflow: hidden;
@@ -34,8 +34,8 @@ body {
     font-family: bebas;
     font-size: 130pt;
     margin-top: 10%;
-    text-shadow: 1px 1px 1px black;
     margin-bottom: 10%;
+    text-shadow: 2px 2px 2px black;
 }
 
 #opaqueBackground {
@@ -111,7 +111,7 @@ img.center{
 
 #personalheader{
     font-family: bebas;
-    font-size: 50px;
+    font-size: 80px;
     color: black;
     margin-top: 80px;
     margin-bottom: 30px;
