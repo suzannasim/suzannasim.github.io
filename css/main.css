@@ -20,7 +20,8 @@ body {
 }
 
 #bodyy{
-    background-image: url(../images/tester.JPG);
+    background-image: url(../images/bridgecopy.jpg);
+    background-size: cover;
     display: inline-block;
     overflow: hidden;
     width: 100%;
@@ -31,9 +32,9 @@ body {
     color: white;
     text-align: center;
     font-family: bebas;
-    font-size: 100pt;
+    font-size: 130pt;
     margin-top: 10%;
-    text-shadow: 1px 1px 1px steelblue;
+    text-shadow: 1px 1px 1px black;
     margin-bottom: 10%;
 }
 
@@ -88,7 +89,7 @@ img.center{
 }
 
 .navbar a:hover{
-    background-color: lightslategrey;
+    background-color: lightblue;
 }
 
 #aboutheader {
