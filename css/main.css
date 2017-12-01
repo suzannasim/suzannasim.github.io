@@ -15,12 +15,8 @@ body {
     src: url('bebas.ttf') format("truetype");
 }
 
-@font-face{
-    font-family: "Open Sans", sans-serif;
-}
-
 #bodyy{
-    background-image: url(../images/bridgetest.jpg);
+    background-image: url(../images/compressedbridge.jpg);
     background-size: cover;
     display: inline-block;
     overflow: hidden;
@@ -113,8 +109,8 @@ img.center{
     font-family: bebas;
     font-size: 80px;
     color: black;
-    margin-top: 80px;
-    margin-bottom: 30px;
+    margin-top: 70px;
+    margin-bottom: 20px;
 }
 
 .parallaxcontainer{
@@ -124,7 +120,7 @@ img.center{
 }
 
 .archeryparallax{
-    background: url('../images/archery2.jpg') no-repeat;
+    background: url('../images/archerycompressed.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
@@ -282,7 +278,7 @@ ul:nth-of-type(1) {
 .linkbar {
     font-family: bebas;
     overflow: hidden;
-    background-color: lightgrey;
+    background-color: gainsboro;
     position: fixed; /* Set the navbar to fixed position */
     bottom: 0; /* Position the navbar to the bottom of the page */
     width: 100%; /* Full width */
