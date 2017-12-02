@@ -97,6 +97,7 @@ img.center{
 
 #aboutheader {
     align-self: center;
+    white-space: nowrap;
 }
 
 /* tyepwriter effect */
