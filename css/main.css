@@ -1,3 +1,4 @@
+/* overall */
 html, body {
     height: 100%
     margin: 0;
@@ -9,12 +10,24 @@ body {
     margin: 0;
 }
 
+/* highlight color */
+::-moz-selection { /* Code for Firefox */
+    background: lightsteelblue;
+}
 
+::selection {
+    background: lightsteelblue;
+}
+
+/* fonts */
 @font-face {
-    font-family: "headerFont"
+    font-family: "headerFont";
     src: url('bebas.ttf') format("truetype");
 }
 
+@import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
+
+/* home page */
 #bodyy{
     background-image: url(../images/compressedbridge.jpg);
     background-size: cover;
@@ -23,6 +36,7 @@ body {
     width: 100%;
 }
 
+/* about page */
 #test{
     display: block;
     color: white;
@@ -65,6 +79,7 @@ img.center{
     position: relative;
     text-align: center;
     color: white;
+    white-space: nowrap;
 }
 
 .aboutbodyparagraph{
@@ -72,31 +87,21 @@ img.center{
     margin-right: 15%;
     margin-top: 15%;
     margin-bottom: 15%;
-}
-
-#navbar {
-    font-family: bebas;
-    overflow: hidden;
-    background-color: black;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 100;
-}
-
-.navbar a:hover{
-    background-color: lightblue;
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
 }
 
 #aboutheader {
     align-self: center;
 }
 
+/* tyepwriter effect */
 #typewriter {
     text-align: center;
     z-index: -100;
 }
 
+/* personal page */
 #archeryphoto{
     width: 100%;
 }
@@ -155,43 +160,41 @@ img.center{
 #avideotext{
     margin-left: 33%;
     margin-right: auto;
-    font-family: times new roman;
+    font-family: 'Source Serif Pro', serif;
     font-size: 20px
 }
 
-.violinvides{
-    width: 420px;
+.violinvideos{
+    width: 100%;
     height: auto;
     position: relative;
-    margin: auto;
     float: left;
-    overflow: hidden;
 }
 
 #orchestravideo{
-    width: 420px;
-    float: left;
+    width: 50%;
+    float: inherit;
     text-align: center;
-    margin-left: 15%;
-    overflow: hidden;
+    margin: auto;
 }
 
 #orchvidtext{
-    font-family: times new roman;
-    font-size: 20px
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    padding-bottom: 20%;
 }
 
 #quintetvideo{
-    width: 420px;
+    width: 50%;
     position: relative;
-    margin: 0 auto;
     text-align: center;
-    overflow: hidden;
+    float: inherit;
 }
 
 #quintetvidtext{
-    font-family: times new roman;
-    font-size: 20px  
+    font-family: 'Source Serif Pro', serif;
+    font-size: 20px;
+    padding-bottom: 20%;
 }
 
 ul:nth-of-type(1) {
@@ -205,7 +208,7 @@ ul:nth-of-type(1) {
 }
 
 #archerytext{
-    font-family: times new roman;
+    font-family: 'Source Serif Pro', serif;
     font-size: 20px;
 }
 
@@ -216,7 +219,7 @@ ul:nth-of-type(1) {
 }
 
 #violintext{
-    font-family: times new roman;
+    font-family: 'Source Serif Pro', serif;
     font-size: 20px;
 }
 
@@ -228,16 +231,15 @@ ul:nth-of-type(1) {
 }
 
 #gdlink{
-    font-family: times new roman;
+    font-family: 'Source Serif Pro', serif;
     font-size: 20px;
     color: black;
     margin-top: 10px;
-    padding-bottom: 90px;
 
 }
 
 #gdtext{
-    font-family: times new roman;
+    font-family: 'Source Serif Pro', serif;
     font-size: 20px;
     display: block;
 }
@@ -246,13 +248,30 @@ ul:nth-of-type(1) {
     background-color: beige;
 }
 
-
-.navbar {
+/* menu bar */
+#navbar {
+    font-family: bebas;
     overflow: hidden;
-    background-color: #333;
+    background-color: black;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar at the top of the page */
     width: 100%; /* Full width */
+    z-index: 100;
+}
+
+.navbar a:hover{
+    background-color: lightblue;
+}
+
+.navbar {
+    font-family: bebas;
+    overflow: hidden;
+    background-color: gainsboro;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar to the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+    font-size: 20px;
 }
 
 /* Links inside the navbar */
@@ -261,7 +280,7 @@ ul:nth-of-type(1) {
     display: block;
     color: #f2f2f2;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
@@ -269,12 +288,11 @@ ul:nth-of-type(1) {
     background-color: lightsteelblue;
 }
 
-/* Main content */
 .main {
     margin-top: 30px; /* Add a top margin to avoid content overlay */
 }
 
-
+/* bottom menu bar */
 .linkbar {
     font-family: bebas;
     overflow: hidden;
@@ -283,15 +301,16 @@ ul:nth-of-type(1) {
     bottom: 0; /* Position the navbar to the bottom of the page */
     width: 100%; /* Full width */
     z-index: 100;
+    font-size: 20px;
 }
 
-/* Links inside the navbar */
+/* Links inside the linkbar */
 .linkbar a {
     float: left;
     display: block;
     color: black;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 20px;
     text-decoration: none;
 }
 
