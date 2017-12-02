@@ -46,6 +46,10 @@ body {
     margin-top: 10%;
     margin-bottom: 10%;
     text-shadow: 2px 2px 2px black;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
 }
 
 #opaqueBackground {
