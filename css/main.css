@@ -27,9 +27,14 @@ body {
 
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
+@font-face {
+    font-family: "shutterstone";
+    src: url('/shutterstone.ttf') format("truetype");
+}
+
 /* home page */
 #bodyy{
-    background-image: url(../images/compressedbridge.jpg);
+    background-image: url(../images/airplanecrop.jpg);
     background-size: cover;
     display: inline-block;
     overflow: hidden;
@@ -41,15 +46,13 @@ body {
     display: block;
     color: white;
     text-align: center;
-    font-family: bebas;
-    font-size: 130pt;
-    margin-top: 10%;
+    font-family: shutterstone, bebas, sans-serif;
+    font-size: 220pt;
+    margin-top: 5%;
     margin-bottom: 10%;
-    text-shadow: 2px 2px 2px black;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
+    max-width: 100%;
+    height: auto;
+    text-shadow: 1px 1px 1px grey;
 }
 
 #opaqueBackground {
