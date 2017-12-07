@@ -21,20 +21,34 @@ body {
 
 /* fonts */
 @font-face {
-    font-family: "headerFont";
-    src: url('bebas.ttf') format("truetype");
+    font-family: "bebas";
+    src: url('fonts/bebas.ttf') format("truetype");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
 @font-face {
     font-family: "shutterstone";
-    src: url('/shutterstone.ttf') format("truetype");
+    src: url('fonts/shutterstone.ttf') format("truetype");
+}
+
+/* animations */
+@keyframes spin {
+    from {transform: translateY(0deg);}
+    to {transform: translateY(180deg);}
+}
+
+.pls {
+    animation-name: spin;
+    animation-delay: 2s;
+    animation-duration: 3s;
+    animation-fill-mode: forwards;
+    animation-iteration-count: infinite;
 }
 
 /* home page */
 #bodyy{
-    background-image: url(../images/airplanecrop.jpg);
+    background-image: url(../images/bridge1.jpg);
     background-size: cover;
     display: inline-block;
     overflow: hidden;
@@ -47,12 +61,12 @@ body {
     color: white;
     text-align: center;
     font-family: shutterstone, bebas, sans-serif;
-    font-size: 220pt;
+    font-size: 170pt;
     margin-top: 5%;
     margin-bottom: 10%;
     max-width: 100%;
     height: auto;
-    text-shadow: 1px 1px 1px grey;
+    text-shadow: 1px 1px 1px black;
 }
 
 #opaqueBackground {
@@ -133,7 +147,7 @@ img.center{
 }
 
 .archeryparallax{
-    background: url('../images/archerycompressed.jpg') no-repeat;
+    background: url('../images/archery2.jpg') no-repeat;
     background-position: center center;
     background-size: cover;
     background-attachment: fixed;
