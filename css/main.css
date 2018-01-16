@@ -270,6 +270,14 @@ ul:nth-of-type(1) {
     background-color: beige;
 }
 
+/*projects page*/
+#projectspage {
+    margin-top: 200px;
+    text-align: center;
+    font-family: bebas;
+    font-size: 20pt;
+}
+
 /* menu bar */
 #navbar {
     font-family: bebas;
