@@ -25,6 +25,12 @@ body {
     src: url('fonts/bebas.ttf') format("truetype");
 }
 
+@font-face {
+    font-family: "bebas2";
+    src: url('fonts/bebas2.woff') format("woff");
+}
+
+
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
 @font-face {
@@ -133,7 +139,7 @@ img.center{
 }
 
 #personalheader{
-    font-family: bebas;
+    font-family: bebas, bebas2;
     font-size: 80px;
     color: black;
     margin-top: 70px;
@@ -224,7 +230,7 @@ ul:nth-of-type(1) {
 }
 
 #personalarcheryheader{
-    font-family: bebas;
+    font-family: bebas, bebas2;
     font-size: 30px;
     margin-left: 3%;
 }
@@ -235,7 +241,7 @@ ul:nth-of-type(1) {
 }
 
 #personalviolinheader{
-    font-family: bebas;
+    font-family: bebas, bebas2;
     font-size: 30px;
     margin-left: 3%;
 }
@@ -246,7 +252,7 @@ ul:nth-of-type(1) {
 }
 
 #gdheader{
-    font-family: bebas;
+    font-family: bebas, bebas2;
     font-size: 30px;
     margin-left: 3%;
     display: block;
@@ -274,13 +280,13 @@ ul:nth-of-type(1) {
 #projectspage {
     margin-top: 200px;
     text-align: center;
-    font-family: bebas;
+    font-family: bebas, bebas2;
     font-size: 20pt;
 }
 
 /* menu bar */
 #navbar {
-    font-family: bebas;
+    font-family: bebas, bebas2;
     overflow: hidden;
     background-color: black;
     position: fixed; /* Set the navbar to fixed position */
@@ -294,7 +300,7 @@ ul:nth-of-type(1) {
 }
 
 .navbar {
-    font-family: bebas;
+    font-family: bebas, bebas2;
     overflow: hidden;
     background-color: gainsboro;
     position: fixed; /* Set the navbar to fixed position */
@@ -324,7 +330,7 @@ ul:nth-of-type(1) {
 
 /* bottom menu bar */
 .linkbar {
-    font-family: bebas;
+    font-family: bebas, bebas2;
     overflow: hidden;
     background-color: gainsboro;
     position: fixed; /* Set the navbar to fixed position */
