@@ -48,6 +48,15 @@ body {
     to {transform: translateY(180deg);}
 }
 
+#comingsoon{
+    margin-top: 20%;
+    color: black;
+    font-family: bebas, 'Oswald', sans-serif;
+    font-size: 40px;
+    text-align: center;
+    z-index: auto;
+}
+
 .pls {
     animation-name: spin;
     animation-delay: 2s;
@@ -403,3 +412,4 @@ input[type=submit]:hover {
     padding: 10px;
     align-content: center;
 }
+
