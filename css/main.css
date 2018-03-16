@@ -29,8 +29,9 @@ body {
     font-family: "bebas2";
     src: url('fonts/bebas2.woff') format("woff");
 }
-
-
+@font-face {
+    font-family: 'Roboto', sans-serif;
+}
 @import url('https://fonts.googleapis.com/css?family=Source+Serif+Pro');
 
 @font-face {
@@ -54,7 +55,7 @@ body {
 
 /* home page */
 #bodyy{
-    background-image: url(../images/bridge1.jpg);
+    background-image: url(../images/rollercoaster.jpg);
     background-size: cover;
     display: inline-block;
     overflow: hidden;
@@ -66,7 +67,7 @@ body {
     display: block;
     color: white;
     text-align: center;
-    font-family: shutterstone, bebas, sans-serif;
+    font-family: shutterstone, bebas, 'Cabin Condensed', sans-serif;
     font-size: 170pt;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -139,7 +140,7 @@ img.center{
 }
 
 #personalheader{
-    font-family: bebas, bebas2;
+    font-family: 'Cabin Condensed', sans-serif;
     font-size: 80px;
     color: black;
     margin-top: 70px;
@@ -286,7 +287,7 @@ ul:nth-of-type(1) {
 
 /* menu bar */
 #navbar {
-    font-family: bebas, bebas2;
+    font-family: bebas, bebas2,'Cabin Condensed', sans-serif;
     overflow: hidden;
     background-color: black;
     position: fixed; /* Set the navbar to fixed position */
@@ -300,7 +301,7 @@ ul:nth-of-type(1) {
 }
 
 .navbar {
-    font-family: bebas, bebas2;
+    font-family: bebas, bebas2, 'Cabin Condensed', sans-serif;
     overflow: hidden;
     background-color: gainsboro;
     position: fixed; /* Set the navbar to fixed position */
@@ -330,7 +331,7 @@ ul:nth-of-type(1) {
 
 /* bottom menu bar */
 .linkbar {
-    font-family: bebas, bebas2;
+    font-family: bebas, bebas2, 'Cabin Condensed', sans-serif;
     overflow: hidden;
     background-color: gainsboro;
     position: fixed; /* Set the navbar to fixed position */
@@ -390,4 +391,12 @@ input[type=submit]:hover {
     padding: 20px;
     font-family: times new roman;
     font-size: 13pt;
+}
+
+.amatproject{
+    margin: auto;
+    width: 200px;
+    height: 100px;
+    padding: 10px;
+    align-content: center;
 }
