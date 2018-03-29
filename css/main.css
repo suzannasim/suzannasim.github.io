@@ -42,10 +42,30 @@ body {
     src: url('fonts/shutterstone.ttf') format("truetype");
 }
 
+@font-face {
+  font-family: "BGBOLD";
+  src: url("fonts/brandon_bld.woff") format ("woff");
+}
+
+@import url('https://fonts.googleapis.com/css?family=Fjalla+One');
+
+@font-face {
+    font-family: "fjallaone";
+    src: url('https://fonts.googleapis.com/css?family=Fjalla+One')
+}
+
 /* animations */
 @keyframes spin {
     from {transform: translateY(0deg);}
     to {transform: translateY(180deg);}
+}
+
+#name {
+    color: black;
+    font-family: bebas;
+    font-size: 200px;
+    text-align: center;
+    margin-top: 9%
 }
 
 #comingsoon{
@@ -67,7 +87,7 @@ body {
 
 /* home page */
 #bodyy{
-    background-image: url(../images/rollercoaster.jpg);
+    background-image: url(../images/fog.jpg);
     background-size: cover;
     display: inline-block;
     overflow: hidden;
@@ -140,6 +160,7 @@ img.center{
 #typewriter {
     text-align: center;
     z-index: -100;
+    margin-top: 8%;
 }
 
 /* personal page */
@@ -171,7 +192,6 @@ img.center{
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
-    box-shadow: inset 0 0 1em #111;
 }
 
 .violinparallax{
@@ -180,7 +200,6 @@ img.center{
     background-size: cover;
     background-attachment: fixed;
     height: 80vh;
-    box-shadow: inset 0 0 1em #111;
 }
 
 .graphicparallax{
@@ -297,64 +316,24 @@ ul:nth-of-type(1) {
     font-size: 20pt;
 }
 
-/* menu bar */
-#navbar {
-    font-family: bebas, bebas2,'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
-    overflow: hidden;
-    background-color: black;
-    position: fixed; /* Set the navbar to fixed position */
-    top: 0; /* Position the navbar at the top of the page */
-    width: 100%; /* Full width */
-    z-index: 100;
+/* index navbar */
+.nav a:hover{
+    background-color: white;
 }
 
-.navbar a:hover{
-    background-color: lightblue;
-}
-
-.navbar {
-    font-family: bebas, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
+.nav {
+    font-family: "re", "bebas";
     overflow: hidden;
-    background-color: gainsboro;
+    background-color: transparent;
     position: fixed; /* Set the navbar to fixed position */
     top: 0; /* Position the navbar to the top of the page */
     width: 100%; /* Full width */
     z-index: 100;
-    font-size: 20px;
+    font-size: 30px;
 }
 
 /* Links inside the navbar */
-.navbar a {
-    float: left;
-    display: block;
-    color: #f2f2f2;
-    text-align: center;
-    padding: 14px 20px;
-    text-decoration: none;
-}
-
-.navbar a:hover{
-    background-color: lightsteelblue;
-}
-
-.main {
-    margin-top: 30px; /* Add a top margin to avoid content overlay */
-}
-
-/* bottom menu bar */
-.linkbar {
-    font-family: bebas, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
-    overflow: hidden;
-    background-color: gainsboro;
-    position: fixed; /* Set the navbar to fixed position */
-    bottom: 0; /* Position the navbar to the bottom of the page */
-    width: 100%; /* Full width */
-    z-index: 100;
-    font-size: 20px;
-}
-
-/* Links inside the linkbar */
-.linkbar a {
+.nav a {
     float: left;
     display: block;
     color: black;
@@ -363,8 +342,93 @@ ul:nth-of-type(1) {
     text-decoration: none;
 }
 
+.nav a:hover{
+    background-color: #92a9b9;
+}
+
+/* navbar */
+.navbar a:hover{
+    background-color: white;
+}
+
+.navbar {
+    font-family: "re", "bebas";
+    overflow: hidden;
+    background-color: black;
+    position: fixed; /* Set the navbar to fixed position */
+    top: 0; /* Position the navbar to the top of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+    font-size: 25px;
+}
+
+/* Links inside the navbar */
+.navbar a {
+    float: left;
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.navbar a:hover{
+    background-color: #92a9b9;
+}
+.main {
+    margin-top: 30px; /* Add a top margin to avoid content overlay */
+}
+
+/* index bottom menu bar */
+.link {
+    font-family: bebas, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
+    overflow: hidden;
+    background-color: transparent;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar to the bottom of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+    font-size: 30px;
+}
+
+/* Links inside the linkbar */
+.link a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
+.link a:hover{
+    background-color: white;
+}
+
+/* bottom menu bar */
+.linkbar {
+    font-family: bebas, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
+    overflow: hidden;
+    background-color: darkgrey;
+    position: fixed; /* Set the navbar to fixed position */
+    bottom: 0; /* Position the navbar to the bottom of the page */
+    width: 100%; /* Full width */
+    z-index: 100;
+    font-size: 25px;
+}
+
+/* Links inside the linkbar */
+.linkbar a {
+    float: right;
+    display: block;
+    color: black;
+    text-align: center;
+    padding: 14px 20px;
+    text-decoration: none;
+}
+
 .linkbar a:hover{
-    background-color: #FFEC8B;
+    background-color: white;
 }
 
 /* contact me form css */
