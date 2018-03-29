@@ -329,7 +329,7 @@ ul:nth-of-type(1) {
     top: 0; /* Position the navbar to the top of the page */
     width: 100%; /* Full width */
     z-index: 100;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* Links inside the navbar */
@@ -359,7 +359,7 @@ ul:nth-of-type(1) {
     top: 0; /* Position the navbar to the top of the page */
     width: 100%; /* Full width */
     z-index: 100;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Links inside the navbar */
@@ -388,7 +388,7 @@ ul:nth-of-type(1) {
     bottom: 0; /* Position the navbar to the bottom of the page */
     width: 100%; /* Full width */
     z-index: 100;
-    font-size: 30px;
+    font-size: 20px;
 }
 
 /* Links inside the linkbar */
@@ -414,7 +414,7 @@ ul:nth-of-type(1) {
     bottom: 0; /* Position the navbar to the bottom of the page */
     width: 100%; /* Full width */
     z-index: 100;
-    font-size: 25px;
+    font-size: 20px;
 }
 
 /* Links inside the linkbar */
