@@ -24,12 +24,15 @@ body {
 /* fonts */
 @font-face {
     font-family: "bebas";
-    src: url('fonts/bebas.ttf') format("truetype");
+    src: url('../fonts/bebas.ttf') format("truetype"),
+         url('../fonts/bebas.woff') format("woff"),
+         url('../fonts/bebas.eot'),
+         url('../fonts/bebas.svg#bebas') format("svg");
 }
 
 @font-face {
     font-family: "bebas2";
-    src: url('fonts/bebas2.woff') format("woff");
+    src: url('../fonts/bebas2.woff') format("woff");
 }
 @font-face {
     font-family: 'Roboto', sans-serif;
@@ -39,12 +42,12 @@ body {
 
 @font-face {
     font-family: "shutterstone";
-    src: url('fonts/shutterstone.ttf') format("truetype");
+    src: url('../fonts/shutterstone.ttf') format("truetype");
 }
 
 @font-face {
   font-family: "BGBOLD";
-  src: url("fonts/brandon_bld.woff") format ("woff");
+  src: url("../fonts/brandon_bld.woff") format ("woff");
 }
 
 @import url('https://fonts.googleapis.com/css?family=Fjalla+One');
@@ -62,7 +65,7 @@ body {
 
 #name {
     color: black;
-    font-family: bebas;
+    font-family: bebas, arial bold;
     font-size: 200px;
     text-align: center;
     margin-top: 9%
@@ -71,7 +74,7 @@ body {
 #comingsoon{
     margin-top: 20%;
     color: black;
-    font-family: bebas, 'Oswald', sans-serif;
+    font-family: bebas, arial bold, 'Oswald', sans-serif;
     font-size: 40px;
     text-align: center;
     z-index: auto;
@@ -99,7 +102,7 @@ body {
     display: block;
     color: white;
     text-align: center;
-    font-family: bebas, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
+    font-family: bebas, arial bold, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
     font-size: 170pt;
     margin-top: 5%;
     margin-bottom: 10%;
@@ -173,7 +176,7 @@ img.center{
 }
 
 #personalheader{
-    font-family: bebas, 'Oswald', sans-serif;
+    font-family: bebas, arial bold, 'Oswald', sans-serif;
     font-size: 80px;
     color: black;
     margin-top: 70px;
@@ -312,7 +315,7 @@ ul:nth-of-type(1) {
 #projectspage {
     margin-top: 200px;
     text-align: center;
-    font-family: bebas, bebas2, 'Oswald', sans-serif;
+    font-family: bebas, arial bold, bebas2, 'Oswald', sans-serif;
     font-size: 20pt;
 }
 
@@ -322,7 +325,7 @@ ul:nth-of-type(1) {
 }
 
 .nav {
-    font-family: "re", "bebas";
+    font-family: bebas, arial bold;
     overflow: hidden;
     background-color: transparent;
     position: fixed; /* Set the navbar to fixed position */
@@ -352,7 +355,7 @@ ul:nth-of-type(1) {
 }
 
 .navbar {
-    font-family: "re", "bebas";
+    font-family: "re", "bebas", arial bold;
     overflow: hidden;
     background-color: black;
     position: fixed; /* Set the navbar to fixed position */
@@ -381,7 +384,7 @@ ul:nth-of-type(1) {
 
 /* index bottom menu bar */
 .link {
-    font-family: bebas, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
+    font-family: bebas, arial bold, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
     overflow: hidden;
     background-color: transparent;
     position: fixed; /* Set the navbar to fixed position */
@@ -407,7 +410,7 @@ ul:nth-of-type(1) {
 
 /* bottom menu bar */
 .linkbar {
-    font-family: bebas, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
+    font-family: bebas, arial bold, bebas2, 'Oswald', sans-serif, 'Cabin Condensed', sans-serif;
     overflow: hidden;
     background-color: darkgrey;
     position: fixed; /* Set the navbar to fixed position */
