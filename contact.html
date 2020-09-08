@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+    <head>
+        <title>Contact Me</title>
+        
+        <link rel="stylesheet" href="css/contact.css">
+        <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+    </head>
+    
+    <body>
+        <div id="contact-title">
+            <h1>Say Hello</h1>
+            <h2>lorem ipsum</h2>
+        </div>
+        
+        <div>
+            <form id="contact-form" method="post" action="/email.php">
+                <input name="name" type="text" class="form-control" placeholder="Name" required><br>
+                <input name="email" type="email" class="form-control" placeholder="Email" required><br>
+                <input name="subject" type="text" class="form-control" placeholder="Subject" required><br>
+                <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
+                <input type="submit" class="form-control submit" value="SEND MESSAGE">
+            </form>
+        </div>
+    </body>
+    
+</html>

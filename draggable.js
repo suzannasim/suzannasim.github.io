@@ -2,5 +2,5 @@
 /*global $, jQuery, alert*/
 
 $(function(){
-    $('.blob').draggable({scroll:false});
+    $('.drag').draggable({scroll:false});
 });

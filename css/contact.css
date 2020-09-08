@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    background-color: #EEEDE9;
+    background-position: center;
+    background-size: cover;
+    font-family: 'Kumbh Sans';
+}
+
+#contact-title {
+    margin top: 100px;
+    text-transform: uppercase;
+}
+
+form {
+    margin-top: 50px;
+}
+
+.form-control {
+    width: 600px;
+    background: transparent;
+    border: none;
+    outline: none;
+    border-bottom: 1px solid gray;
+    margin-bottom: 16px;
+    font-family: 'Kumbh Sans';
+}
+
+input {
+    height: 45px;
+}
+
+form .submit {
+    background: #ff5722;
+    border-color: transparent;
+    font-weight: bold;
+    letter-spacing: 2px;
+    height: 50px;
+    margin-top: 20px;
+}

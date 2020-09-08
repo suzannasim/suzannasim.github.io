@@ -3,38 +3,48 @@
     padding: 0;
 }
 
-.background{
+#background{
     display: grid;
-    grid-template-columns: repeat(100, 1%);
-    grid-template-rows: repeat(100, 1%);
+    grid-template-areas: "b1 b2 b3"
+                        "b4 center b5"
+                        "b6 b7 b8";
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 10% 80% 10%;
     height: 100vh;
     background-color: #EEEDE9;
     background-position: center;
     background-size: cover;
-    overflow-x: hidden;
+    overflow-x: hidden; 
     position: relative;
 }
 
-#blob1{
-    grid-column-start: 25;
-    grid-column-end: 90;
-    grid-row-start: 25;
-    grid-row-end: 75;
-    max-height: 100%;
-    max-width: 100%;
+.blob {
     animation: float1 5.5s ease-in-out infinite;
     opacity: 0.9;
+    max-height: 28vw;
+    max-width: auto;
+    position: absolute;
+}
+
+#blob1{
+    grid-area: center;
+    animation: float1 5.5s ease-in-out infinite;
+    opacity: 0.9;
+    max-height: 28vw;
+    max-width: auto;
+    justify-self: center;
+    align-self: center;
 }
 
 #blob2{
-    grid-column-start: 47;
-    grid-column-end: 85;
-    grid-row-start: 20;
-    grid-row-end: 75;
-    max-height: 100%;
-    max-width: 100%;
+    grid-area: center;
     animation: float2 4.5s ease-in-out infinite;
     opacity: 0.9;
+    max-height: 32vw;
+    max-width: auto;
+    justify-self: center;
+    align-self: center;
+    left: 10%;
 }
 
 #name{
@@ -44,16 +54,22 @@
     width: 100%;
     color: white;
     font-family: Calisto MT, serif;
-    font-size: 3vw;
+    font-size: 3.5vw;
     z-index: 1;
-    grid-column-start: 35;
-    grid-column-end: 70;
-    grid-row-start: 40;
-    grid-row-end: 48;
+    grid-area: center;
+    font-family: 'Kumbh Sans';
+    letter-spacing: 0.1em;
 }
 
 a:link{
     text-decoration: none;
+}
+
+.instructions{
+    display: inline;
+    grid-area: b7;
+    text-align: center;
+    color: white;
 }
 
 @keyframes float1 {
