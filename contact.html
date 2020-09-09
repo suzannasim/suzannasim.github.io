@@ -15,11 +15,15 @@
         </div>
         
         <div>
-            <form id="contact-form" class="gform" method="post" data-email="suzannasim@gmail.com" action="https://script.google.com/macros/s/AKfycbx4exhzc4QwoguCQDZ8O6FQPC4Esigqu_a9NJA5eNxNeM-LDT4/exec">
+            <form id="contact-form" class="gform" method="post" action="https://script.google.com/macros/s/AKfycbx4exhzc4QwoguCQDZ8O6FQPC4Esigqu_a9NJA5eNxNeM-LDT4/exec">
                 <input name="name" type="text" class="form-control" placeholder="Name" required><br>
                 <input name="email" type="email" class="form-control" placeholder="Email" required><br>
                 <textarea name="message" class="form-control" placeholder="Message" rows="4" required></textarea><br>
                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
+                
+                <div style="display:none" class="thankyou_message">
+                    <h1>Success! Thank You for contacting me</h1>
+                </div>
             </form>
         </div>
     </body>
