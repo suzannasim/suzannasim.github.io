@@ -9,11 +9,12 @@ body{
     display: grid;
     grid-template-areas: "top top top top"
                          "l1 navbar navbar r1"
+                         "space space space space"
                          "l2 photo text r2"
                          "l3 social social r3"
                          "l4 l5 r4 r5";
     grid-template-columns: 25% 1fr 1fr 25%;
-    grid-template-rows: 15% 1fr 1fr 1fr 15%;
+    grid-template-rows: 15% 1fr 5% 1fr 1fr 5%;
     height: 100vh;
     background-color: #EEEDE9;
     background-position: center;
@@ -27,20 +28,22 @@ body{
     padding: 0;
     display: inline;
     grid-area: navbar;
+    justify-self: center;
 }
 
-li {
+.navbar li {
     list-style-type: none;
     margin: 0;
     padding: 0;
     font-size: 1em;
+    display: inline;
 }
 
 li a{
-    display: block;
+    display: inline-block;
     color: #B99F92;
     text-align: center;
-    padding: 14px 16px;
+    padding: 14px 6px;
     text-decoration: none;
 }
 
@@ -58,6 +61,7 @@ li a:hover{
     max-width: 2in;
     min-width: 2in;
     height: auto;
+    justify-self: center;
 }
 
 .body {
@@ -67,10 +71,9 @@ li a:hover{
 
 .navbar,
 .body {
-    font-family: 'Kumbh Sans';
+    font-family: 'Montserrat', sans-serif;
 }
 
-.SocialMedias {
-    grid-area: social;
-    max-width: 14px;
+.SocialMedia{
+    
 }

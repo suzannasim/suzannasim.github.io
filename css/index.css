@@ -57,8 +57,13 @@
     font-size: 3.5vw;
     z-index: 1;
     grid-area: center;
-    font-family: 'Kumbh Sans';
+    /*font-family: 'Kumbh Sans';*/
+    font-family: 'Montserrat', sans-serif;
     letter-spacing: 0.1em;
+}
+
+#name:hover{
+    color: black;
 }
 
 a:link{
@@ -69,7 +74,9 @@ a:link{
     display: inline;
     grid-area: b7;
     text-align: center;
-    color: white;
+    color: #d1bea8;
+    font-family: 'Montserrat', sans-serif;
+/*    text-shadow: 0.5px 0.5px 1px black;*/
 }
 
 @keyframes float1 {
