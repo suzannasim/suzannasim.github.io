@@ -9,12 +9,12 @@ body{
     display: grid;
     grid-template-areas: "top top top top"
                          "l1 navbar navbar r1"
-                         "space space space space"
+                         "space1 space space space2"
                          "l2 photo text r2"
                          "l3 social social r3"
                          "l4 l5 r4 r5";
-    grid-template-columns: 25% 1fr 1fr 25%;
-    grid-template-rows: 15% 1fr 5% 1fr 1fr 5%;
+    grid-template-columns: 25% 15% 1fr 25%;
+    grid-template-rows: 10% 5% 5% 1fr 1fr 5%;
     height: 100vh;
     background-color: #EEEDE9;
     background-position: center;
@@ -23,23 +23,25 @@ body{
     position: relative;
 }
 
+/* Nav Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .navbar{
-    margin: 0;
-    padding: 0;
     display: inline;
+    margin: 0;
     grid-area: navbar;
+    white-space: nowrap;
     justify-self: center;
 }
 
 .navbar li {
     list-style-type: none;
-    margin: 0;
-    padding: 0;
+    padding: 5px;
     font-size: 1em;
-    display: inline;
+    display: inline-block;
 }
 
-li a{
+li a {
     display: inline-block;
     color: #B99F92;
     text-align: center;
@@ -47,9 +49,16 @@ li a{
     text-decoration: none;
 }
 
-li a:hover{
+li a:hover {
     background-color: white;
 }
+
+#active-page{
+    color: #554348;
+}
+
+/* About Me
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .aboutme{
     grid-area: text; 
@@ -65,7 +74,7 @@ li a:hover{
 }
 
 .body {
-    font-size: 0.8em;
+    font-size: 1em;
     line-height: 1.5;
 }
 
@@ -74,6 +83,43 @@ li a:hover{
     font-family: 'Montserrat', sans-serif;
 }
 
+a{
+    text-decoration: none;
+}
+
+#active-page{
+    color: black;
+}
+
+/* Social Medias
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .SocialMedia{
-    
+    grid-area: social;
+    display: inline;
+    justify-self: center;
+    margin: 1vh;
+}
+
+.socialbutton{
+    max-width: 3vw;
+    padding: 3vw;
+    opacity: 50%;
+}
+
+.socialbutton:hover{
+    opacity: 100%;
+}
+
+/* Responsiveness
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+@media (max-width: 700px) {
+  .grid {
+    grid-template-areas: "top top top top"
+                         "l1 navbar navbar r1"
+                         "space1 photo photo space2"
+                         "l2 text text r2"
+                         "l3 social social r3"
+                         "l4 l5 r4 r5";
+  }
 }

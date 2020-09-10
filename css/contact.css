@@ -5,16 +5,67 @@ body {
     background-color: #EEEDE9;
     background-position: center;
     background-size: cover;
-    font-family: 'Kumbh Sans';
+    font-family: 'Montserrat', sans-serif;
+    display: grid;
+    grid-template-areas: "space1 empty1 space2"
+                         "space1 navbar space2"
+                         "space1 empty2 space2"
+                         "space1 message space2"
+                         "space1 contact space2";
+    grid-template-columns: 20% 60% 20%;
+    grid-template-rows: 20% 5% 10% 10% 1fr;
 }
+
+
+/* Nav Bar
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.navbar{
+    display: inline;
+    margin: 0;
+    grid-area: navbar;
+    white-space: nowrap;
+    justify-self: center;
+}
+
+.navbar li {
+    list-style-type: none;
+    padding: 5px;
+    font-size: 1em;
+    display: inline-block;
+}
+
+li a {
+    display: inline-block;
+    color: #B99F92;
+    text-align: center;
+    padding: 14px 6px;
+    text-decoration: none;
+}
+
+li a:hover {
+    background-color: white;
+}
+
+#active-page{
+    color: #554348;
+}
+
+/* Contact Section
+-------------------------------------------------- */
 
 #contact-title {
     margin top: 100px;
-    text-transform: uppercase;
+    grid-area: message;
+    color: #554348;
 }
 
 form {
     margin-top: 50px;
+}
+
+#form{
+    grid-area: contact;
 }
 
 .form-control {
@@ -24,7 +75,7 @@ form {
     outline: none;
     border-bottom: 1px solid gray;
     margin-bottom: 16px;
-    font-family: 'Kumbh Sans';
+    font-family: 'Montserrat', sans-serif;
 }
 
 input {
@@ -32,10 +83,18 @@ input {
 }
 
 form .submit {
-    background: #ff5722;
+    background: #B99F92;
     border-color: transparent;
     font-weight: bold;
     letter-spacing: 2px;
     height: 50px;
     margin-top: 20px;
+}
+
+form .submit:hover{
+    background: white;
+}
+
+.thankyou_message p{
+    font-size: 1em;
 }

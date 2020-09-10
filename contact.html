@@ -4,17 +4,29 @@
     <head>
         <title>Contact Me</title>
         
+        <!--CSS-->
         <link rel="stylesheet" href="css/contact.css">
+        
+        <!--Fonts-->
         <link href="https://fonts.googleapis.com/css2?family=Kumbh+Sans:wght@300&family=Roboto:wght@300&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200&display=swap" rel="stylesheet">
     </head>
     
     <body>
+        
+        <div class="navbar">
+            <li><a href="index.html">HOME</a></li>
+            <li><a href="about.html">ABOUT</a></li>
+            <li><a href="experience.html">EXPERIENCE</a></li>
+            <li><a href="fun.html">FUN</a></li>
+            <li><a href="contact.html" id="active-page">CONTACT</a></li>
+        </div>
+
         <div id="contact-title">
-            <h1>let's chat!</h1>
-            <h2>shoot me a message!</h2>
+            <h1>LET'S CHAT!</h1>
         </div>
         
-        <div>
+        <div id="form">
             <form id="contact-form" class="gform" method="post" action="https://script.google.com/macros/s/AKfycbx4exhzc4QwoguCQDZ8O6FQPC4Esigqu_a9NJA5eNxNeM-LDT4/exec">
                 <input name="name" type="text" class="form-control" placeholder="Name" required><br>
                 <input name="email" type="email" class="form-control" placeholder="Email" required><br>
@@ -22,7 +34,7 @@
                 <input type="submit" class="form-control submit" value="SEND MESSAGE">
                 
                 <div style="display:none" class="thankyou_message">
-                    <h1>Success! Thank You for contacting me</h1>
+                    <p>Your message was received! :)</p>
                 </div>
             </form>
         </div>
