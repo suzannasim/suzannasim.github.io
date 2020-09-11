@@ -71,11 +71,13 @@ li a:hover {
     min-width: 2in;
     height: auto;
     justify-self: center;
+    align-self: center;
 }
 
 .body {
     font-size: 1em;
     line-height: 1.5;
+    align-content: center;
 }
 
 .navbar,
@@ -111,13 +113,13 @@ a{
     opacity: 100%;
 }
 
-/* Responsiveness
+/* Responsiveness [NEED TO FIX]
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media (max-width: 700px) {
+@media (min-width: 700px) {
   .grid {
     grid-template-areas: "top top top top"
-                         "l1 navbar navbar r1"
                          "space1 photo photo space2"
+                         "l1 navbar navbar r1"
                          "l2 text text r2"
                          "l3 social social r3"
                          "l4 l5 r4 r5";
